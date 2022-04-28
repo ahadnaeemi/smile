@@ -1,0 +1,30 @@
+#div1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+    height: 350px;
+    width: 950px;
+    margin-top: 100px;
+    margin-bottom: 90px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+h1 {
+    text-align: center;
+    padding: 0;
+    color: gold;
+}
+
+a {
+    display: block;
+    color: cyan;
+    text-align: center;
+    font-size: 25px;
+}

@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: Questa_Sans_Regular
+font link: https://www.fontspring.com/fonts/the-questa-project/questa-sans/questa-sans-regular
+font author: The Questa Project
+font author site: http://thequestaproject.com/
+
+
+icon designer: Luis Prado
+icon designer link: /Luis
+        
+{"bg":"#F3E9F1","icon-gradient-0":"#E98C00","icon-gradient-1":"#8F5BFE","font":"#261624","slogan":"#3a2a38"}
+      

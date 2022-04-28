@@ -1,0 +1,159 @@
+html {
+    height: 100%;
+}body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #d9dcdc;
+    /* background: black; */
+    /* font-family: 'Baloo Thambi 2', cursive; */
+}
+
+#triangle {
+    position: absolute;
+    top: 0;
+    background-color: black;
+    width: 100%;
+    height: 70vh;
+    clip-path: polygon(100% 0%, 100% 87%, -45% 0%);
+}
+
+.login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: white;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+    border-radius: 10px;
+}
+
+.login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: black;
+    text-align: center;
+}
+
+.login-box .user-box {
+    position: relative;
+}
+
+.login-box .user-box input {
+    width: 100%;
+    /* padding: 5px 0; */
+    font-size: 16px;
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    background: transparent;
+}
+
+.login-box .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    color: black;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.login-box .user-box input:focus~label,
+.login-box .user-box input:valid~label {
+    top: -20px;
+    left: 0;
+    color: #000000;
+    font-size: 14px;
+}
+
+.login-box form a {
+    color: #000000;
+    text-decoration: none;
+    padding: 10px;
+}
+
+#btn {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    /* background-color: #35643f9c; */
+    background: black;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.5s;
+    margin-top: 40px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.user,
+label {
+    color: black;
+    padding: 10px 0;
+    font-size: 16px;
+}
+
+
+/* .hide {
+    display: none;
+} */
+
+#NGO-signup {
+    animation-name: appear-NGO-signup;
+    animation-duration: 2.5s;
+}
+
+#HOTEL-signup {
+    animation-name: appear-HOTEL-signup;
+    animation-duration: 2.5s;
+}
+
+@media only screen and (max-width: 600px) {
+    #signup-div {
+        width: 75%;
+    }
+}
+
+
+/* @media only screen and (max-width: 300px) {
+#signup-div {
+    width: 100%;
+}
+} */
+
+@media only screen and (max-width:350px) {
+    #signup-div {
+        width: 100%;
+    }
+}
+
+@keyframes appear-NGO-signup {
+    from {
+        opacity: .5;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes appear-HOTEL-signup {
+    from {
+        opacity: .5;
+    }
+    to {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,242 @@
+* {
+    font-family: 'Libre Bodoni', serif;
+}
+
+html {
+    height: 100%;
+}
+
+
+/* @import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@500;700&family=Fredoka+One&family=Righteous&family=Yeon+Sung&display=swap'); */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #d9dcdc;
+    /* background: black; */
+    /* font-family: 'Baloo Thambi 2', cursive; */
+}
+
+#triangle {
+    position: absolute;
+    top: 0;
+    background-color: black;
+    width: 100%;
+    height: 70vh;
+    clip-path: polygon(100% 0%, 100% 87%, -45% 0%);
+}
+
+.login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: white;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+    border-radius: 10px;
+}
+
+.login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: black;
+    text-align: center;
+}
+
+.login-box .user-box {
+    position: relative;
+}
+
+.login-box .user-box input {
+    width: 100%;
+    /* padding: 5px 0; */
+    font-size: 16px;
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    background: transparent;
+}
+
+.login-box .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    color: black;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.login-box .user-box input:focus~label,
+.login-box .user-box input:valid~label {
+    top: -20px;
+    left: 0;
+    color: #000000;
+    font-size: 14px;
+}
+
+#image {
+    border-bottom: none;
+    padding-left: 60px;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.login-box form a {
+    color: #000000;
+    text-decoration: none;
+    padding: 10px;
+}
+
+#btn {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    /* background-color: #35643f9c; */
+    background: black;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.5s;
+    margin-top: 40px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.user,
+label {
+    color: black;
+    padding: 10px 0;
+    font-size: 16px;
+}
+
+.user {
+    display: flex;
+    background: #fff;
+    /* height: 100px;
+    width: 400px; */
+    align-items: center;
+    justify-content: center;
+    /* border-radius: 5px; */
+    padding: 20px 15px;
+    /* box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2); */
+}
+
+.user .option {
+    background: #fff;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    /* padding: 0 10px; */
+    /* border: 2px solid lightgrey; */
+    transition: all 0.3s ease;
+}
+
+.user .option .dot {
+    height: 20px;
+    width: 20px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    position: relative;
+}
+
+.user .option .dot::before {
+    position: absolute;
+    content: "";
+    top: 4px;
+    left: 4px;
+    width: 12px;
+    height: 12px;
+    background: #0069d9;
+    border-radius: 50%;
+    opacity: 0;
+    transform: scale(1.5);
+    transition: all 0.3s ease;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+#NGO:checked:checked~.NGO,
+#HOTEL:checked:checked~.HOTEL,
+#SINGLE:checked:checked~.SINGLE {
+    border-color: #0069d9;
+    background: #0069d9;
+}
+
+#NGO:checked:checked~.NGO .dot,
+#HOTEL:checked:checked~.HOTEL .dot,
+#SINGLE:checked:checked~.SINGLE .dot {
+    background: #fff;
+}
+
+#NGO:checked:checked~.NGO .dot::before,
+#HOTEL:checked:checked~.HOTEL .dot::before,
+#SINGLE:checked:checked~.SINGLE .dot::before {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.user .option span {
+    font-size: 20px;
+    color: #808080;
+}
+
+#NGO:checked:checked~.NGO span,
+#HOTEL:checked:checked~.HOTEL span,
+#SINGLE:checked:checked~.SINGLE span {
+    color: #fff;
+}
+
+
+/* .hide {
+    display: none;
+} */
+
+
+/* #NGO-signup {
+    animation-name: appear-NGO-signup;
+    animation-duration: 2.5s;
+}
+
+#HOTEL-signup {
+    animation-name: appear-HOTEL-signup;
+    animation-duration: 2.5s;
+} */
+
+@media only screen and (max-width: 600px) {
+    #signup-div {
+        width: 75%;
+    }
+}
+
+
+/* @media only screen and (max-width: 300px) {
+#signup-div {
+    width: 100%;
+}
+} */
+
+@media only screen and (max-width:350px) {
+    #signup-div {
+        width: 100%;
+    }
+}

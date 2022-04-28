@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Libre Bodoni', serif;
+}
+
+#triangle {
+    position: fixed;
+    top: 0;
+    background-color: black;
+    width: 100%;
+    height: 70vh;
+    clip-path: polygon(100% 0%, 100% 87%, -45% 0%);
+    z-index: -1;
+}
+
+#ihavefood {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.btn-hover {
+    background: white;
+    padding: 10px 50px;
+    font-size: 20px;
+    border-radius: 50px;
+    /* margin-top: 160%; */
+    color: black;
+    border: 2px solid black;
+    /* background:linear-gradient(to right,#E98C00,#8F5BFE); */
+}
+
+.btn-hover:hover {
+    font-size: 20px;
+    background-color: black;
+    color: white;
+}
+
+#footer {
+    bottom: 0;
+    position: absolute;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    height: 30vh;
+    width: 100%;
+    background-color: rgb(20, 18, 18);
+    z-index: -1;
+}
+
+#foodraised {
+    color: azure;
+    height: 95%;
+    width: 50%;
+    border-right: 2px solid rgb(230, 213, 213);
+    display: flex;
+    /* flex-direction: column; */
+    /* text-align: center; */
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid; */
+}
+
+#smileserved-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#smileserved {
+    font-size: 3rem;
+}
+
+#smiles {
+    align-self: flex-end;
+}
+
+#aboutus {
+    height: 95%;
+    width: 50%;
+    border-left: 2px solid #e0e0e0;
+}
+
+@media (max-width: 768px) {
+    #footer {
+        flex-direction: column;
+    }
+    #foodraised,
+    #aboutus {
+        width: 98%;
+    }
+    #foodraised {
+        border-right-style: none;
+        border-bottom: 2px solid rgb(230, 213, 213);
+    }
+    #aboutus {
+        border-left-style: none;
+        border-top: 2px solid rgb(230, 213, 213);
+    }
+}
